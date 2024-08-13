@@ -1,0 +1,19 @@
+<h2>Template</h2>
+<h3>Text interpolation</h3>
+{{name}} - {{age}}
+
+<p>{{ 1 + 1 }}</p>
+
+
+<p>{{ condition }}</p>
+
+
+<hr/>
+
+<h2>Property binding</h2>
+
+<!-- botão desabilitado seguindo o valor de isDisabled -->
+<button [disabled]="isDisabled">button</button>
+
+<!-- imagem com caminho do arquivo seguindo o valor de srcValue -->
+<img [src]="srcValue" [alt]="name" [title]="name" />
