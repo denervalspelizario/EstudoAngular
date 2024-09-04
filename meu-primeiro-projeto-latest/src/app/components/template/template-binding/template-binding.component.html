@@ -25,9 +25,47 @@
 
 <h2>Class and Style binding</h2>
 
-<p [class.background-red]="age >= 32" [class.background-blue]="age === 32">
+<p [class.background-red]="age >= 33" [class.background-blue]="age <= 32">
   {{ name }}
 </p>
 
 <!-- atentar para aspas simples dentro de aspas duplas no underline -->
 <p [style.text-decoration]="isTextDecoration">{{age}}</p>
+
+
+<hr>
+<h2>Event binding</h2>
+
+<button (click)="sum()">+</button>
+<button (click)="sub()">-</button>
+<!-- ao clicar no input de dar shift+t chama o metodo onKeyDown-->
+<input (keydown.shift.t)="onKeyDown($event)">
+
+<!-- ao passar o mouse chama a função onMouseEvent-->
+<div
+style="background: red; width: 300px; height: 300px;margin-top: 10px;"
+(mousemove)="onMouseEvent($event)"
+>
+</div>
+
+<hr>
+<h2>Two-away binding</h2>
+<input [(ngModel)]="name">
+
+{{name}}
+
+<hr/>
+
+<h3>Diretivas de atributo</h3>
+<div
+  [ngClass]="{ 'background-red': age > 35, 'background-blue': age < 35 }">
+  Classes condicionais
+</div>
+
+<div
+  [ngStyle]="{
+    color: age > 35 ? 'green' : 'red',
+    'font-size': age > 20 ? '10px' : '20px'
+  }">
+  Estilo dinâmico
+</div>

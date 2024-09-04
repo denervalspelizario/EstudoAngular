@@ -1,0 +1,14 @@
+
+<!-- pegando o valor do h2  atravez do template variable-->
+<h2 #h2>Template Variables</h2>
+{{h2.innerHTML}}
+
+
+
+<!-- pegando o valor de name do input atravez do template variable-->
+<input #name value="Dener Pelizario"/>
+<br>
+{{"Valor de template = " + name.value}}
+
+<!-- chamando o component app next component -->
+<app-nextcomponent/>
