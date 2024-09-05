@@ -1,0 +1,16 @@
+<br>
+<br>
+<h2>Diretiva ngStyle</h2>
+
+<!--  alterando o css de acordo com o valor da condicao no caso um bool -->
+<h1 [ngStyle]="{color:condicao ? 'green' : 'red'}">Aprendendo a diretiva ngStyle</h1>
+
+
+<!-- listando array lista e adiiconando com ngstyle condicao de css -->
+<ul>
+  <li
+    *ngFor="let l of lista"
+    [ngStyle]="{'color': l == 'Aprovado' ? 'green' : 'red' }" >
+    {{l}}
+  </li>
+</ul>
