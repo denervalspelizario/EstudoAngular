@@ -14,3 +14,10 @@
     {{l}}
   </li>
 </ul>
+
+<h2>Diretiva ngClass</h2>
+<ul>
+  <li *ngFor="let l of lista" [ngClass]="l =='Aprovado' ? 'fontVerde' : 'fontVermelha'">
+    {{l}}
+  </li>
+</ul>
