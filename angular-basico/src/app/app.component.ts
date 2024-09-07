@@ -8,12 +8,14 @@ import { Component05Component } from "./component05/component05.component";
 import { Component06Component } from "./component06/component06.component";
 import { Component07Component } from "./component07/component07.component";
 import { Component08Component } from "./component08/component08.component";
+import { Component09Component } from "./component09/component09.component";
+import { Component10Component } from "./component10/component10.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Component01Component, Component02Component, Component03Component, Component04Component, Component05Component, Component06Component, Component07Component, Component08Component],
+  imports: [RouterOutlet, Component01Component, Component02Component, Component03Component, Component04Component, Component05Component, Component06Component, Component07Component, Component08Component, Component09Component, Component10Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

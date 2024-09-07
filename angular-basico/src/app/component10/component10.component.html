@@ -1,0 +1,11 @@
+<br>
+<br>
+<h2>Reactive Forms</h2>
+<br>
+<p>{{formulario.value.nome}}</p>
+<p>{{formulario.value.cidade}}</p>
+<br>
+<form [formGroup]="formulario">
+  <input type="text" formControlName="nome">
+  <input type="text" formControlName="cidade">
+</form>
