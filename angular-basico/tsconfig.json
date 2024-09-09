@@ -8,6 +8,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "strictPropertyInitialization": false, // Desabilita a verificação estrita de inicialização de propriedades
     "skipLibCheck": true,
     "esModuleInterop": true,
     "sourceMap": true,

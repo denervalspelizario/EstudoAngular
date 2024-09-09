@@ -10,12 +10,14 @@ import { Component07Component } from "./component07/component07.component";
 import { Component08Component } from "./component08/component08.component";
 import { Component09Component } from "./component09/component09.component";
 import { Component10Component } from "./component10/component10.component";
+import { Component12Component } from "./component12/component12.component";
+import { Component13Component } from "./component13/component13.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Component01Component, Component02Component, Component03Component, Component04Component, Component05Component, Component06Component, Component07Component, Component08Component, Component09Component, Component10Component],
+  imports: [RouterOutlet, Component01Component, Component02Component, Component03Component, Component04Component, Component05Component, Component06Component, Component07Component, Component08Component, Component09Component, Component10Component, Component12Component, Component13Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
