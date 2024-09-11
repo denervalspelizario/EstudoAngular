@@ -11,4 +11,6 @@ import { Component, Input } from '@angular/core';
 export class Component15TabelaComponent {
 
   @Input() vetor:string[] = [];
+
+
 }

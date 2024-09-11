@@ -14,12 +14,14 @@ import { Component12Component } from "./component12/component12.component";
 import { Component13Component } from "./component13/component13.component";
 import { Component14Component } from "./component14/component14.component";
 import { Component15Component } from "./component15/component15.component";
+import { Component16Component } from "./component16/component16.component";
+import { Component17Component } from "./component17/component17.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Component01Component, Component02Component, Component03Component, Component04Component, Component05Component, Component06Component, Component07Component, Component08Component, Component09Component, Component10Component, Component12Component, Component13Component, Component14Component, Component15Component],
+  imports: [RouterOutlet, Component01Component, Component02Component, Component03Component, Component04Component, Component05Component, Component06Component, Component07Component, Component08Component, Component09Component, Component10Component, Component12Component, Component13Component, Component14Component, Component15Component, Component16Component, Component17Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
